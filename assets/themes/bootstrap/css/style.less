@@ -374,11 +374,31 @@ outline-color: #06192e;
 
 
 #blogs-hero {
+  padding-top: 60px;
     background: url('http://imageshack.com/a/img912/6472/ZZjGVc.jpg')no-repeat center;
-background-size: cover;
-background-position-y: -150px;
+background-size: contain;
+background-position-y: -250px;
+@media (max-width: 1700px) and (min-width: 1470px) {
+  background-position-y: -150px;
+}
+@media (max-width: 1470px) and (min-width: 772px) {
+  background-position-y: -50px;
+}
+
+@media (max-width: 772px) and (min-width: 400px) {
+  background-position-y: -10px;
+  height: 150px;
+}
+
+
 height: 350px;
 background-attachment: fixed;
+}
+
+@media(max-width:772px) {
+  position: relative;
+
+  h2 { position: absolute;}
 }
 
 .blog-wraps {
