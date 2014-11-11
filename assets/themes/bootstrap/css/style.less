@@ -1,0 +1,394 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 250px;
+  @media(max-width: 772px) {
+    margin-bottom: 550px;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 250px;
+    @media(max-width: 772px) {
+      height: 550px;
+    }
+  background-color: rgb(92,184,230);
+  // background: url('http://i1370.photobucket.com/albums/ag251/anthroisphoto/mahaskaprod/HOME/chalkboardL_zps71e2c689.png~original')no-repeat center center;
+  // background-size: cover;
+
+  .container { padding-top: 60px;}
+
+  ul li {
+    a {
+      font-family: @header;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+
+  .social {
+    ul li { 
+      display: inline;
+      a { color: #5cb8e6}
+    }
+    .fa {
+      color: #fff;
+      border-radius: 20%;
+      padding: 10px;
+
+      p { font-size: 14px;}
+    }
+
+  }
+}
+
+// #wrapper {
+//   margin-top: 40px;
+// }
+
+/* ===== Fonts ===== */
+@header: 'Nunito', serif;
+
+
+/* ===== Navbar ===== */
+.navbar-default{
+    background-color: rgb(92,184,230);
+    border: none;
+
+    // #white-bg {
+    //       background: url('http://myrainbownursery.co.uk/img/clouds-top.svg') bottom repeat-x;
+    // }
+
+    .navbar-brand {
+      color: #FFF;
+      font-size: 32px;
+      font-family: @header;
+    }
+
+.navbar-nav>li>a { 
+    color: #FFF; 
+    font-size: 18px; 
+
+    @media(max-width:992px){
+      font-size: 16px;
+    }
+  }
+
+      .nav.nav-pills {
+        li {
+          padding: 4px; 
+          a {
+            color: #fff;
+            background: rgba(92,184,230,0.40);
+            font-size: 18px;
+            font-family: @header;
+          }
+        }
+      }
+    
+}
+
+.collapse.in{
+    
+    background-color:#f0f0f0 !important;
+}
+
+
+/* ===== Global ===== */
+
+section {
+  padding-top: 60px; padding-bottom: 60px;
+
+  @media(max-width: 772px){
+    padding-top: 20px; padding-bottom: 20px;
+  }
+}
+.title {
+  position: relative;
+  padding-bottom: 15px;
+  background: url('../img/ink.png') center no-repeat;
+  color: #FFF;
+  margin-bottom: 10px;
+
+}
+
+.titlez {
+  position: relative;
+  padding-bottom: 15px;
+  background: url('../img/ink.png') center no-repeat;
+  color: #FFF;
+}
+
+.title-sub {
+  margin-bottom: 10px;
+}
+
+.btn-link {
+  font-size: 2.1rem;
+border-radius: 6px;
+box-shadow: 0 7px 0 0 #005280;
+text-shadow: -1px -1px 0 rgba(0,0,0,.2);
+background: #2985B3;
+color: #fff!important;
+// padding: .8125em;
+border: 1px solid #106C9A;
+display: inline-block;
+
+&:active, &:visited {
+  transition: all 175ms ease-in;
+box-shadow: none;
+  }
+  &:focus, &:hover {
+    background: #5CB8E6;
+    box-shadow: 0 7px 0 0 #2985B3;
+    text-decoration: none;
+  }
+
+}
+
+ul li { list-style-type: none;}
+
+
+a {
+  text-decoration: none;
+
+  color: #5C5A60;
+
+  &:hover { color: #5CB8E6; text-decoration: none;}
+}
+
+#sky {
+  height: 700px;
+  h1, p { color: #FFF;}
+  background: url('http://imageshack.com/a/img908/4430/oite4c.png') #5cb8e6 no-repeat center;
+  background-size: contain;
+
+  @media(min-width:1200px){
+      background-position-y: 20px;
+      height: 820px; 
+    }
+
+  @media(max-width:992px){
+      background-position-y: 140px; 
+    }
+
+  @media(max-width:767px) and (min-width:687px){
+      background: url('http://imageshack.com/a/img908/4430/oite4c.png') #5cb8e6 no-repeat top;
+      background-size: contain; 
+      background-position-y: 50px; 
+    }
+  @media(max-width:686px) {
+      background-position-y: 80px;
+    }
+
+
+
+  #welcome {
+    padding-top: 350px;
+    @media(max-width:1200px){
+      padding-top: 250px;
+    }
+    @media(max-width:767px) and (min-width: 687px){
+      padding-top: 450px;
+    }
+    @media(max-width:686px){
+      padding-top: 350px;
+    }
+    
+    .color {
+      background: rgba(92,184,230,0.7);
+      padding: 10px;
+    }
+  }
+
+  // #feature-wrapper {
+  //   background: url('http://myrainbownursery.co.uk/img/home/field.svg') #5cb8e6 center bottom no-repeat;
+  // }
+
+  // #feature-hills {
+  //   background: url('http://myrainbownursery.co.uk/img/home/hills.svg') center bottom repeat-x;
+  // }
+
+  // #feature-foreground {
+  //   background: url('http://myrainbownursery.co.uk/img/home/foreground.svg') center bottom no-repeat;
+  //   background-position-y: -9px;
+  //   height: 700px;
+  // }
+}
+
+#intro {
+  // background: url('http://www.helloruby.com/images/20b5b96d.preorder-doodle.png') no-repeat;
+  // height: 400px;
+
+
+}
+
+#kids {
+  background: url('http://imageshack.com/a/img540/2381/yVy5EJ.jpg');
+  background-attachment: fixed;
+  // background-position-y: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 5px 8px #000;
+}
+
+
+#newsletter {
+  background: url('http://imageshack.com/a/img743/9472/DSIAvT.jpg')no-repeat center;
+  background-size: cover;
+}
+
+
+
+
+#testimonials {
+   background: url('http://imageshack.com/a/img537/8895/mOUnuS.jpg')no-repeat center center;
+  background-size: cover;
+
+  p {
+    color: #FFF;
+  }
+  cite { color: #FFF;}
+}
+
+#partners {
+   background: url('http://imageshack.com/a/img901/5093/xHD6dZ.jpg')no-repeat center center;
+    background-size: cover;
+
+}
+
+
+input {
+  color: white;
+margin-right: 5px;
+margin-bottom: 10px;
+border-color: white;
+height: 49px;
+width: 100%;
+
+&:focus {
+  border: 1px solid #c1c1c1;
+background: none;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+outline-color: #06192e;
+}
+}
+
+.form-control {
+  margin-top: 20px;
+  height: 72px;
+  width: 100%;
+
+  @media(min-width:767px) {
+    width: 700px;
+  }
+}
+
+
+
+#blog {
+  background: url('http://imageshack.com/a/img912/6472/ZZjGVc.jpg')no-repeat center;
+background-size: cover;
+background-position-y: -50px;
+}
+.blog-wrap {
+  background-color: rgba(255,255,255,0.9);
+  border: 1px solid #5cb8e6;
+  padding: 10px;
+  @media (min-widht: 992px) {
+    height: 370px;
+  }
+
+  h3 {
+    color: #5cb8e6;
+  }
+}
+
+
+.btn-primary {
+  background-color: #5cb8e6;
+}
+
+
+
+
+#blogs-hero {
+    background: url('http://imageshack.com/a/img912/6472/ZZjGVc.jpg')no-repeat center;
+background-size: cover;
+background-position-y: -150px;
+height: 350px;
+}
+
+.blog-wraps {
+  background-color: rgba(255,255,255,0.9);
+  border: 1px solid #5cb8e6;
+  padding: 10px;
+
+  h3 {
+    color: #5cb8e6;
+  }
+  margin: 10px;
+}
+
+.blog-wrap-sm {
+  background-color: rgba(255,255,255,0.9);
+  border: 1px solid #5cb8e6;
+  padding: 10px;
+    h3 {
+    color: #5cb8e6;
+  }
+}
+
+
+
+
+
+
+#mc_embed_signup {
+  background: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

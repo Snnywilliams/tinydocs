@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<section id="blogs-hero">
+	<div class="container">
+		<div class="col-xs-12 text-center title">
+				<h2>Our Blogs</h2>
+			</div>
+	</div>
+</section>
+
+<section id="blogs">
+	<div class="container">
+		{% for post in site.categories['blogs'] %}
+				<div class="col-xs-12 blog-wraps">
+					<h2 class="text-center">{{post.title}}</h2>
+					<p>{{ post.content | truncatewords: 100 }}</p>
+					<div class="text-center">
+                		<a href="{{site.baseurl}}{{post.url}}" class="btn btn-default btn-link text-center">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                	</div>
+                	<br>
+				</div>
+		{% endfor %}
+	</div>
+</section>
