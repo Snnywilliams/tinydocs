@@ -95,14 +95,28 @@
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <h4>Menu</h4>
                         <hr>
+                        
                         <ul>
+                        {% if page.path contains 'blog %'}
+                            <li><a href="http://tinydocs.co">Home</a></li>
+                            <li><a href="http://tinydocs.co#intro">About Us</a></li>
+                            <li><a href="http://tinydocs.co#video">Kickstarter Campaign</a></li>
+                            <li><a href="http://tinydocs.co#newsletter">Newsletter</a></li>
+                            <li><a href="http://tinydocs.co#blog">Blog</a></li>
+                            <li><a href="http://tinydocs.co#testimonials">Testimonials</a></li>
+                            {% else %}
+
                             <li><a href="#">Home</a></li>
                             <li><a href="#intro">About Us</a></li>
                             <li><a href="#video">Kickstarter Campaign</a></li>
                             <li><a href="#newsletter">Newsletter</a></li>
                             <li><a href="#blog">Blog</a></li>
                             <li><a href="#testimonials">Testimonials</a></li>
+                        {% endif %}
+
                         </ul>
+
+                        
                     </div>
         
                     <div class="col-md-3 col-sm-6 col-xs-6">
