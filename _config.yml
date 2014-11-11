@@ -16,11 +16,9 @@ markdown: kramdown
 title : TINY DOCS
 tagline: Creating a healthier happier planet
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : Sunny Williams
+  email : sunny@tinydocs.co
+  github : snnywilliams
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
