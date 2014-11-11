@@ -91,7 +91,7 @@ layout: default
 			</div>
 
 			<div class="col-xs-12 visible-xs">
-				<iframe width="640" height="480" src="https://www.kickstarter.com/projects/872160690/tiny-docs/widget/video.html" frameborder="0" scrolling="no"> </iframe>
+				<iframe width="320" height="240" src="https://www.kickstarter.com/projects/872160690/tiny-docs/widget/video.html" frameborder="0" scrolling="no"> </iframe>
 			</div>
 
 			<!-- <div class="col-md-6">
@@ -142,15 +142,19 @@ layout: default
 <section id="blog">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 text-center titlez">
-				<h2>Our Blog</h2>
-				<hr class="visible-xs">
-				<a class="title-sub visible-xs" href="blogs.html">View All Blogs >> </a>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 text-center title-sub hidden-xs">
-					<a class="title-sub" href="blogs.html">View All Blogs >> </a>
+			<div class="blog-wrapper">
+				<div class="col-xs-12 text-center">
+					<div class="titlez">
+						<h2>Our Blog</h2>
+					</div>
+					<a href="#" class="btn btn-linkz">View All Blogs</a>
 				</div>
+				<!-- <div class="row">
+					<div class="col-sm-12 text-center title-sub hidden-xs">
+						<a class="title-sub" href="blogs.html">View All Blogs >> </a>
+					</div>
+				</div> -->
+				<br>
 			</div>
 			<div class="row hidden-sm hidden-xs">
 				{% for post in site.categories['blogs'] limit:3 %}
