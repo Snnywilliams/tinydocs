@@ -37,17 +37,19 @@ layout: default
 		<div class="row">
 			<div class="col-xs-12 text-center title">
 				<h2>Our Story</h2>
+				<hr class="visible-xs">
 			</div>
 			<br>
 			<div class="col-xs-12 col-md-8">
 				<p class="lead">
-				<br>
 				The team at Tiny Docs has a simple mission - to create a healthier, happier planet. We know the medical world can be intimidating, especially for children, so we’re providing a solution to that problem, with a long-term global focus on educating children across the world on health and wellness. Tiny Docs is a web platform that provides resources to educate kids and families about health issues and surgical procedures without the 'doctor-ese'. Our site offers short cartoons featuring our stars, Dr. Patches, a precocious 10-year-old girl physician and her sidekick, Nurse Scrubs, an 8-year-old boy wonder nurse. Our library of cartoons will educate kids (and parents) about a wide range of health issues in an entertaining and educational way.
 				<br><br>
 				</p>
 			</div>
-			<div class="col-xs-12 col-md-4 col-sm-6 text-center">
-				<img class="img-thumbnail" src="http://imageshack.com/a/img661/5219/99d7xo.png">
+			<div class="col-xs-12 col-md-4 col-sm-6 text-center parnter">
+			<br>
+				<img class="img-thumbnail" src="http://imagizer.imageshack.us/v2/640x480q90/538/BlsDU5.png">
+				<p class="lead">Our Proud Partner</p>
 			</div>
 		</div>
 	</div>
@@ -72,19 +74,24 @@ layout: default
 		<div class="row">
 			<div class="col-xs-12 text-center title">
 				<h2>Kickstarter Campaign</h2>
+				<hr class="visible-xs">
 			</div>
 			<br>
-			<div class="col-md-6 hidden-xs">
+			<!-- <div class="col-md-6 hidden-xs">
 				<div class="media__image"><iframe class="media__image--center" frameborder="0" height="360" scrolling="no" src="https://www.kickstarter.com/projects/lindaliukas/hello-ruby/widget/video.html" width="480"></iframe></div>
 			</div>
 			<div class="col-xs-12 visible-xs">
 				<div class="media__image"><iframe class="media__image--center" frameborder="0" height="180" scrolling="no" src="https://www.kickstarter.com/projects/lindaliukas/hello-ruby/widget/video.html" width="280"></iframe></div>
+			</div> -->
+
+			<div class="col-md-6">
+				<a href="https://www.kickstarter.com/projects/872160690/1099098925?token=ec6e7e3d"><img class="img-thumbnail" src="http://imageshack.com/a/img661/9350/uVehgC.jpg"></a>
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<p class="lead">
 					Check out our Kickstarter campaign! Our goal is to raise $10,000 to develop several animated short films to educate and empower kids who face health challenges. We have lots of ways to show our heartfelt thanks for generous donations. Every dollars counts. If you aren't able to contribute, please share our video with friends and loved ones. We greatly appreciate it!
 				</p>
-				<a class="btn btn-link" href="/programmes.php" title="Learn more about our nursery">Learn More</a>
+				<a class="btn btn-link" href="https://www.kickstarter.com/projects/872160690/1099098925?token=ec6e7e3d" title="Learn more about our nursery">Learn More</a>
 			</div>
 		</div>
 	</div>
@@ -95,21 +102,12 @@ layout: default
 		<div class="row text-center">
 			<div class="col-xs-12 text-center title">
 				<h2>Subscribe To Newsletter</h2>
+				<hr class="visible-xs">
 			</div>
 			<div class="col-xs-12">
 				<p class="lead">Stay up to date on the latest from your friends at Tiny Docs. We won't email you too much. Promise. Promise.</p>
 			</div>
-			<div class="col-sm-10 col-sm-offset-2 col-xs-12">
-				<!-- <form class="form-inline" role="form">
-
-					<div class="form-group">
-						<label class="sr-only" for="exampleInputEmail2">Email address</label>
-						<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-					</div>
-					<a href="#" class="btn btn-link">Sign in</a>
-				</form> -->
-
-				<!-- Begin MailChimp Signup Form -->
+			<div class="col-xs-12">
 				<div id="mc_embed_signup">
 					<form action="//tinydocs.us8.list-manage.com/subscribe/post?u=79c5b24b968e6a5caaa791103&amp;id=3d869cdac7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				    <div id="mc_embed_signup_scroll">
@@ -136,10 +134,13 @@ layout: default
 		<div class="row">
 			<div class="col-xs-12 text-center titlez">
 				<h2>Our Blog</h2>
+				<hr class="visible-xs">
+				<a class="title-sub visible-xs" href="blogs.html">View All Blogs >> </a>
 			</div>
-			<div class="col-xs-12 text-center title-sub">
-				<a href="blogs.html">View All Blogs >> </a>
-				<br>
+			<div class="row">
+				<div class="col-sm-12 text-center title-sub hidden-xs">
+					<a class="title-sub" href="blogs.html">View All Blogs >> </a>
+				</div>
 			</div>
 			<div class="row hidden-sm hidden-xs">
 				{% for post in site.categories['blogs'] limit:3 %}
@@ -222,27 +223,12 @@ layout: default
 	</div>
 </section>
 
-<section id="partners">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 text-center titlez">
-				<h2>Our Partners</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 text-center">
-				<img class="img-thumbnail" src="http://imageshack.com/a/img538/7022/BlsDU5.png">
-			</div>
-		</div>
-	</div>
-</section>
-
-
 <section id="testimonials">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 text-center title">
 				<h2>Nice Words</h2>
+				<hr class="visible-xs">
 			</div>
 		</div>
 		<div id="owl-example" class="owl-carousel">
